@@ -126,7 +126,7 @@ const TeamCard = ({ title, images }: TeamCardProps) => {
   return (
     <div className="bg-gray-800 h-64 group rounded-xl overflow-hidden shadow-2xl transition-all relative duration-300">
       <div className="relative w-full h-full overflow-hidden">
-        {images.map((image, index) => (
+        {images.map((_image, index) => (
           <div
             key={index}
             className={`absolute inset-0 h-full w-full transition-all duration-1000 ease-in-out ${
