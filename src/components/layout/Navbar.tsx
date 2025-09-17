@@ -14,6 +14,7 @@ const Navbar = () => {
 
   const closeMenu = () => setIsOpen(false);
 
+
   useEffect(() => {
   function handleClickOutside(e: MouseEvent) {
     if (isOpen && navRef.current && !navRef.current.contains(e.target as Node )) {
@@ -44,7 +45,7 @@ const Navbar = () => {
         "fixed w-full z-50 transition-all duration-300 ",
         isScrolled || isOpen
           ? "bg-gbam-dark/90 backdrop-blur shadow-lg py-2 "
-          : "bg-[#1a212e79] py-4"
+          : "bg-[#1a212e79] backdrop-blur-sm py-4"
       )}>
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
