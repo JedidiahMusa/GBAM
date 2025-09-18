@@ -13,7 +13,8 @@ const CallToAction = () => {
           </Text>
           <Box className="flex flex-col sm:flex-row justify-center gap-4">
             <Button colorScheme="orange" className="bg-gbam-primary hover:bg-gbam-primary/90 text-white py-6 px-8 text-lg">
-              Become A Member
+            <a target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform"> Become A Member</a>
+             
             </Button>
             <Button variant="outline" className="!border-white !text-white hover:!bg-white/10 py-6 px-8 text-lg">
               Sign Up For Updates

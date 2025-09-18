@@ -97,8 +97,8 @@ const TeamCardsGrid = () => {
             movement. Whether you're interested in basketball, arts, music, or
             community outreach, there's a place for you at GBAM.
           </p>
-          <button className="!py-2 !px-4 rounded-xl !text-md font-semibold !bg-gbam-primary">
-            Apply to Join
+          <button className="!py-2 !px-4 rounded-r rounded-l !text-md font-semibold !bg-gbam-primary">
+            <a target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Apply to Join</a>
           </button>
         </div>
       </div>

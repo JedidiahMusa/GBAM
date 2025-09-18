@@ -26,7 +26,7 @@ function MembershipSection() {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Membership
           </h2>
-          <p className="text-gbam-dark/80 max-w-3xl mx-auto font-medium text-xl">
+          <p className="!text-gbam-dark/80 !text-center mx-auto font-medium text-xl">
             The #GBAM arena is a multi-purpose, youth centered facility
             combining two basketball courts and a creative studio...
           </p>
@@ -92,10 +92,11 @@ function MembershipSection() {
                 <div className="flex mt-4 flex-col md:flex-row gap-4">
                   {" "}
                   <button className="!text-white !font-semibold !rounded-l !rounded-r !rounded-lg !bg-[#DD6C21] !p-2">
-                    Individual Membership
+                    <a target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Individual Membership</a>
+                    
                   </button>{" "}
-                  <button className="!border-1 !p-2 rounded-l rounded-r font-semibold !border-white">
-                    Team Membership
+                  <button className="!border-1 !p-2 rounded-l !text-white rounded-r font-semibold !border-white">
+                    <a target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Team Membership</a>
                   </button>{" "}
                 </div>{" "}
               </div>{" "}

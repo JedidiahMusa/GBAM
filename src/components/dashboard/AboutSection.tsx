@@ -27,16 +27,23 @@ const AboutSection = () => {
 
       {/* Floating bb image (still with framer-motion bounce) */}
       <motion.img
-        src={bb}
-        alt="Basketball"
-        className="absolute top-10 !hidden md:!block lg:top-5 lg:left-5 left-10 w-32 md:w-40 lg:w-48 z-40"
-        animate={{ y: [0, -30, 0] }}
-        transition={{
-          duration: 1.7,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+  src={bb}
+  alt="Basketball"
+  className="absolute top-10 !hidden md:!block lg:top-5 lg:left-5 left-10 w-32 md:w-40 lg:w-48 z-40"
+  animate={{
+    y: [0, -30, 0],                // up and down
+    scale: [1, 1.1, 1],            // squash/stretch
+    rotateX: [0, 15, 0],           // tilt forward/back
+          // slight wobble side to side
+  }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  style={{ transformStyle: "preserve-3d" }} // keep 3D perspective
+/>
+
 
       {/* Content */}
       <div className="relative container mx-auto !px-4">

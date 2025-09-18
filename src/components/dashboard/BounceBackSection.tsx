@@ -13,7 +13,7 @@ const BounceBackSection = () => {
           <Heading
             as="h2"
             mb={4}
-            className="text-4xl md:text-5xl font-bold  font-display">
+            className="!text-5xl md:text-5xl !text-gbam-dark font-bold font-display">
             Bounce Back Initiative
           </Heading>
           <Text className="text-gbam-dark/80 max-w-2xl !mx-auto font-medium text-xl">

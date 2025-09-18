@@ -64,7 +64,7 @@ const ImpactSection: React.FC = () => {
             icon={<BsPeople size={50} className="text-orange-500 !font-bold" />}
             count={50000}
             suffix="+"
-            label="Word Reach"
+            label="Reach"
           />
           <StatCard
             icon={

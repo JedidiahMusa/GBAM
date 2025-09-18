@@ -29,7 +29,7 @@ const TeamMembers: React.FC = () => {
 
   return (
     <div className="bg-gradient-to-br from-gray-50 to-gray-200">
-      <div className="container mx-auto px-4 md:px-10 pb-8 relative">
+      <div className="container mx-auto px-8 pb-8 relative">
       <div className="py-8 text-center">
         <h2 className="text-center py-2 !font-bold !text-4xl">
           <b className="text-gbam-primary font-bold text-3xl">#</b> GBAM Team Members
@@ -38,11 +38,11 @@ const TeamMembers: React.FC = () => {
 Meet the #GBAM Team</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
         {galleryImages.map((image) => (
           <div
             key={image.id}
-            className="group relative overflow-hidden shadow-xl rounded-xl h-[23rem] md:h-[25rem] lg:h-[27rem]"
+            className="group relative overflow-hidden shadow-xl my-2 rounded-xl h-[23rem] md:h-[25rem] lg:h-[27rem]"
           >
             <div className="h-full w-full overflow-hidden">
               <img

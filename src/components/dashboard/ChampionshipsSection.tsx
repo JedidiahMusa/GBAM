@@ -1,7 +1,10 @@
+import React, { useEffect } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
-import localGov from "../../assets/images/championship/JABI0283.webp"
-import secSchool from "../../assets/images/championship/IMG_5567.webp"
-import Adult from "../../assets/images/championship/competition3.webp"
+import localGov from "../../assets/images/championship/JABI0283.webp";
+import secSchool from "../../assets/images/championship/IMG_5567.webp";
+import Adult from "../../assets/images/championship/competition3.webp";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface ChampionshipCardProps {
   title: string;
@@ -15,7 +18,10 @@ const ChampionshipCard = ({
   description,
   image,
 }: ChampionshipCardProps) => (
-  <Box className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+  <Box
+    className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+    data-aos="fade-up"
+  >
     <Box className="h-56 overflow-hidden">
       <img
         src={image}
@@ -27,10 +33,11 @@ const ChampionshipCard = ({
       <Heading
         as="h3"
         mb={3}
-        className="!text-xl font-bold text-gbam-dark  font-display">
+        className="!text-xl font-bold text-gbam-dark font-display"
+      >
         {title}
       </Heading>
-      <Text mb={5} className="text-gbam-dark/80 ">
+      <Text mb={5} className="text-gbam-dark/80">
         {description}
       </Text>
       {/* <Button className="!bg-gbam-secondary hover:!bg-gbam-secondary/90 !text-white w-full">
@@ -41,14 +48,24 @@ const ChampionshipCard = ({
 );
 
 const ChampionshipsSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+      offset: 120,
+    });
+  }, []);
+
   return (
     <Box as="section" className="py-20 bg-gbam-light px-4 lg:px-8">
       <Box className="container mx-auto px-4">
-        <Box className="text-center mb-16">
+        <Box className="text-center mb-16" data-aos="fade-down">
           <Heading
             as="h2"
             mb={4}
-            className="!text-4xl md:!text-5xl font-bold  font-display">
+            className="!text-4xl md:!text-5xl font-bold font-display"
+          >
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Championships
           </Heading>
@@ -62,7 +79,9 @@ const ChampionshipsSection = () => {
           <ChampionshipCard
             title="Secondary Schools Championship"
             description="Young kings and queens taking their first shot at greatness through teamwork, leadership, and fun."
-            image={secSchool} buttonText={""}          />
+            image={secSchool}
+            buttonText=""
+          />
 
           <ChampionshipCard
             title="Adult Championship"

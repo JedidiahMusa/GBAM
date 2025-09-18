@@ -45,7 +45,7 @@ const Hero = () => {
         <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
           <motion.div
             key={currentIndex}
-            className="h-full bg-gbam-primary"
+            className="h-full bg-gradient-to-r from-gbam-primary to-gbam-secondary "
             initial={{ width: "0%" }}
             animate={{ width: "100%" }}
             transition={{ duration: 8, ease: "linear" }}
@@ -97,7 +97,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.6 }}
           >
             <button className="!p-3 !px-7 font-semibold rounded-l rounded-r !text-white !bg-[#DD6C21]">
-              Join The Movement
+              <a target='blank' href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Join the Movement</a>
             </button>
           </motion.div>
         </div>

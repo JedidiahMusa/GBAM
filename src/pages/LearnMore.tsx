@@ -60,10 +60,9 @@ function LearnMore() {
   return (
     <>
       <Navbar />
-      <div className="pt-24 w-full lg:px-24 px-4">
-        <h2 className="w-full relative text-center !font-bold !text-5xl">ABOUT US</h2>{" "}
-        {/* Grid background */}
-      <div className="absolute -z-10 inset-0 bg-[linear-gradient(to_right,#d1d5db33_1px,transparent_1px),linear-gradient(to_bottom,#d1d5db33_1px,transparent_1px)] bg-[size:30px_30px]" />
+      <div className="pt-24 w-full bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 lg:px-24 px-4">
+        <h2 className="w-full text-center !font-bold !text-5xl">ABOUT US</h2>{" "}
+
         <section className="pb-12">
           <h2 className="text-center !font-semibold !mt-5 !text-3xl py-4">
             Welcome to <b className="text-gbam-primary">#</b> GBAM, Graffiti

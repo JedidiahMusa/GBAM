@@ -7,27 +7,32 @@ const AcademySection = () => {
   const navigate = useNavigate();
 
   return (
-    <Box as="section" className="py-20 bg-white">
+    <Box as="section" className="pt-20 pb-6 bg-white">
       <Box className="container mx-auto px-4">
         <Box className="text-center mb-16">
           <Heading
             as="h2"
             mb={4}
-            className="!text-4xl md:!text-5xl font-bold font-display">
+            className="!text-4xl md:!text-5xl font-bold font-display"
+          >
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Academy
           </Heading>
           <Text className="text-gbam-dark/80  !mx-auto font-medium text-xl">
-            The #GBAM Academy is not a school in the traditional sense it is a laboratory of life. 
-A place where skills meet soul, and where instruction is fused with inspiration. Whether you're picking up a basketball, a microphone, or a paintbrush, here, you are entering a journey of becoming.
-We train more than athletes and artists we raise changemakers, leaders, and local legends.
+            The #GBAM Academy is not a school in the traditional sense it is a
+            laboratory of life. A place where skills meet soul, and where
+            instruction is fused with inspiration. Whether you're picking up a
+            basketball, a microphone, or a paintbrush, here, you are entering a
+            journey of becoming. We train more than athletes and artists we
+            raise changemakers, leaders, and local legends.
           </Text>
         </Box>
 
         <Box className="grid lg:grid-cols-2 gap-12 items-center">
           <Box
             w={{ base: "sm", md: "2xl", lg: "lg" }}
-            className="!mx-auto mb-8 md:mb-0">
+            className="!mx-auto mb-8 md:mb-0"
+          >
             <Carousel className="rounded-lg" />
           </Box>
 
@@ -36,7 +41,8 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
               <Heading
                 as="h3"
                 mb={6}
-                className="!text-2xl font-bold text-gbam-dark font-display">
+                className="!text-2xl font-bold text-gbam-dark font-display"
+              >
                 Our Programs
               </Heading>
 
@@ -44,11 +50,15 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
                 <Heading
                   as="h4"
                   mb={2}
-                  className="!text-xl font-bold  text-gbam-primary flex items-center">
+                  className="!text-xl font-bold  text-gbam-primary flex items-center"
+                >
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     1
                   </span>
-                  <Text onClick={()=>navigate("/ChildrenSection")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
+                  <Text
+                    onClick={() => navigate("/ChildrenSection")}
+                    className="hover:text-orange-700 flex items-center gap-4 cursor-pointer "
+                  >
                     Children
                     <FaLocationArrow />
                   </Text>
@@ -63,11 +73,15 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
                 <Heading
                   as="h4"
                   mb={2}
-                  className="!text-xl font-bold text-gbam-primary flex items-center">
+                  className="!text-xl font-bold text-gbam-primary flex items-center"
+                >
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     2
                   </span>
-                  <Text onClick={()=>navigate("/Adult")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
+                  <Text
+                    onClick={() => navigate("/Adult")}
+                    className="hover:text-orange-700 flex items-center gap-4 cursor-pointer "
+                  >
                     Adult
                     <FaLocationArrow />
                   </Text>
@@ -82,11 +96,15 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
                 <Heading
                   as="h4"
                   mb={2}
-                  className="!text-xl font-bold text-gbam-primary flex items-center">
+                  className="!text-xl font-bold text-gbam-primary flex items-center"
+                >
                   <span className="bg-gbam-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">
                     3
                   </span>
-                  <Text onClick={()=>navigate("/PersonswithDisabilities")} className="hover:text-orange-700 flex items-center gap-4 cursor-pointer ">
+                  <Text
+                    onClick={() => navigate("/PersonswithDisabilities")}
+                    className="hover:text-orange-700 flex items-center gap-4 cursor-pointer "
+                  >
                     Persons with Disabilities
                     <FaLocationArrow />
                   </Text>
@@ -99,8 +117,12 @@ We train more than athletes and artists we raise changemakers, leaders, and loca
               </Box>
 
               <Button colorScheme="orange" mb={4}>
-                <a target="blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform">Apply for Academy</a>
-                
+                <a
+                  target="blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdNRzH2Q8s-_bHob7uvtiiUUPaT2KDf_DwZBl_Phlnp-qlX8w/viewform"
+                >
+                  Apply for Academy
+                </a>
               </Button>
             </Box>
           </Box>

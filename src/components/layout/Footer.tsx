@@ -179,7 +179,7 @@ const Footer = () => {
               <ListItem className="flex items-start">
                 <IoLocationOutline className="size-5 mr-2 mt-1 text-gbam-yellow" />
                
-                <a className="text-white/70" target="blank" href="maps.app.goo.gl/8VjXGNfx254N7bhs8?g_st=ipc">Kaduna, Nigeria</a>
+                <a className="text-white/70" target="blank" href="https://www.google.com/maps/place/10%C2%B031'58.4%22N+7%C2%B026'18.5%22E/@10.5328771,7.4359052,17z/data=!3m1!4b1!4m4!3m3!8m2!3d10.5328771!4d7.4384801?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D">Kaduna, Nigeria</a>
               </ListItem>
               <ListItem className="flex items-start">
                 <FaFacebook className="size-5 mr-2 mt-1 text-gbam-yellow" />
