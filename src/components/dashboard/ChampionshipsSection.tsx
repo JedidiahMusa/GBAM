@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import localGov from "../../assets/images/championship/JABI0283.webp";
 import secSchool from "../../assets/images/championship/IMG_5567.webp";
