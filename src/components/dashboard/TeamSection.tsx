@@ -21,6 +21,8 @@ import teamCod4 from "../../assets/images/bb-coaching/team-cod4.webp";
 import teamCod6 from "../../assets/images/bb-coaching/team-cod6.webp";
 import teamCod7 from "../../assets/images/bb-coaching/team-cod7.webp";
 import competition2 from "../../assets/images/bb-coaching/competition2.webp";
+import championships1 from "../../assets/images/championship/championships4.webp"
+import championships2 from "../../assets/images/championship/championship5.webp"
 
 const TeamCardsGrid = () => {
   const cardData = [
@@ -30,7 +32,7 @@ const TeamCardsGrid = () => {
     },
     {
       title: "Community Engagement",
-      images: [commEng1, commEng2, commEng3, commEng4, commEng5, commEng6],
+      images: [commEng1, commEng2, commEng3, commEng4, commEng5, commEng6, championships1, championships2],
     },
     {
       title: "Merchandise & Equipment",

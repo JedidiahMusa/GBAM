@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import Slider from "react-slick";
 import localGov from "../../assets/images/championship/JABI0283.webp";
-import secSchool from "../../assets/images/championship/IMG_5567.webp";
+import secSchool from "../../assets/images/championship/secSch1.webp";
+import secSchool1 from "../../assets/images/championship/secSch1.webp";
+import secSchool2 from "../../assets/images/championship/secSch2.webp";
+import secSchool3 from "../../assets/images/championship/secSch3.webp";
+import secSchool4 from "../../assets/images/championship/secSch4.webp";
 import Adult from "../../assets/images/championship/competition3.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -98,7 +102,7 @@ const ChampionshipsSection: React.FC = () => {
           <ChampionshipCard
             title="Secondary Schools Championship"
             description="Young kings and queens taking their first shot at greatness through teamwork, leadership, and fun."
-            images={[secSchool, secSchool]} // you can add more images here
+            images={[secSchool, secSchool1, secSchool2, secSchool3, secSchool4]} // you can add more images here
           />
 
           <ChampionshipCard
