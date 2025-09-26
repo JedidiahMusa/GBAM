@@ -14,7 +14,6 @@ import FoundationSection from "@/components/dashboard/FoundationSection";
 import BounceBackSection from "@/components/dashboard/BounceBackSection";
 import CallToAction from "@/components/dashboard/CallToAction";
 import { Element } from "react-scroll";
-import TeamMembers from "@/components/dashboard/TeamMembers";
 
 function Home() {
   return (
@@ -80,11 +79,7 @@ function Home() {
       </Element>
 
 
-      <Element name="team">
-        <Box as="section" id="teamMembers">
-          <TeamMembers />
-        </Box>
-      </Element>
+     
       {/* Call to Action */}
 
       <Element name="join">

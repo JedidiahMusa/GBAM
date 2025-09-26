@@ -25,6 +25,7 @@ import imageh from "../../src/assets/images/colaborations/image8.webp";
 import imagei from "../../src/assets/images/colaborations/image9.webp";
 import imagej from "../../src/assets/images/colaborations/image10.webp";
 import imagek from "../../src/assets/images/colaborations/image11.webp";
+import TeamMembers from "@/components/dashboard/TeamMembers";
 
 function LearnMore() {
   const Images = [
@@ -157,6 +158,7 @@ function LearnMore() {
           </div>
         </section>
       </div>
+      <TeamMembers />
     </>
   );
 }

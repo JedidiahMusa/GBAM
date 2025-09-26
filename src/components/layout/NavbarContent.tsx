@@ -70,14 +70,6 @@ const NavbarContent: React.FC<NavbarContentProps> = ({ closeMenu }) => {
         Bounce Back
       </Link>
 
-      <Link
-        to="teamMembers"
-        smooth={true}
-        duration={500}
-        onClick={closeMenu}
-        className="!text-white hover:!text-gbam-primary transition-colors hover:cursor-pointer">
-        Team
-      </Link>
 
       <Button colorScheme="orange" className="w-full lg:w-fit ">
         <Link

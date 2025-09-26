@@ -9,7 +9,7 @@ function MembershipSection() {
   const images = [ArenaImg, ArenaImg2, ArenaImg3, ArenaImg4]; // carousel images
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto slide every 5 seconds
+  // Auto slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
