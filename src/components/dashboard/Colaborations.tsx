@@ -19,26 +19,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Colaborations() {
   const Images = [
-    { id: 1, src: imagea, title: "Partner 1" },
-    { id: 2, src: imageb, title: "Partner 2" },
-    { id: 3, src: imagec, title: "Partner 3" },
-    { id: 4, src: imaged, title: "Partner 4" },
-    { id: 5, src: imagee, title: "Partner 5" },
+    { id: 1, src: imagea, title: "Director General of the National Gallery of Art(NGA)", name:"ahmed sodangi" },
+    { id: 2, src: imageb, title: "Deputy Majority leader, Kaduna State House of Assembly", name:"hon. munira suleiman tanimu" },
+    { id: 3, src: imagec, title: "Honourable Minister of State", title2:"Federal Ministry of Youth Development", name:"ayodele olawande" },
+    { id: 4, src: imaged, title: "Executive Secretary, Kaduna State Social Investment Programme Agency (KADSIPA)", name:"umar sani maikudi" },
+    { id: 5, src: imagee, title: "Chief of Defence Staff", name:"general christopher musa" },
     { id: 6, src: imagef, title: "Partner 6" },
-    { id: 7, src: imageg, title: "Partner 7" },
-    { id: 8, src: imageh, title: "Partner 8" },
-    { id: 9, src: imagei, title: "Partner 9" },
-    { id: 10, src: imagej, title: "Partner 10" },
-    { id: 11, src: imagek, title: "Partner 11" },
+    { id: 7, src: imageg, title: "State Coordinator, Prime Guage Solutions", name:"aliyu yakubu ahmadu" },
+    { id: 8, src: imageh, title: "Chairman, Nigerian Sports Commission", name:"shehu dikko" },
+    { id: 9, src: imagei, title: "Zenith Bank", name:"mr james x mrs hauwa" },
+    { id: 10, src: imagej, name:"hon(dr) gideon jok" },
+    { id: 11, src: imagek, title: "Deputy Governor of Economic Policy at the Central Bank of Nigeria(CBN)", name:"muhammed sani abdullahi" },
     { id: 12, src: imagel, title: "Letter 1" },
     { id: 13, src: imagem, title: "Letter 2" },
     { id: 14, src: imagen, title: "Letter 3" },
   ];
 
-  // Split images into 3 groups
-  const group1 = Images.slice(0, 4); // first 4
-  const group2 = Images.slice(4, 8); // next 4
-  const group3 = Images.slice(12, 14); // last 3
+  // Split images into 2 groups
+  const group1 = Images.slice(0, 11);
+  const group2 = Images.slice(12, 14); // last 3
 
   const settings = {
     dots: false,
@@ -46,14 +45,14 @@ function Colaborations() {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    speed: 800,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
 
   return (
-    <section className="py-12">
+    <section className="py-12 lg:px-20">
       <div className="container mx-auto px-4">
         {/* Section header */}
         <div className="text-center mb-12">
@@ -64,23 +63,25 @@ function Colaborations() {
         </div>
 
         {/* Three carousels */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[group1, group2, group3].map((group, idx) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
+          {[group1, group2].map((group, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg h-96"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg h-[28rem] lg:h-[30rem]"
             >
               <Slider {...settings}>
                 {group.map((img) => (
-                  <div key={img.id} className="relative h-96">
+                  <div key={img.id} className="relative h-[28rem] lg:h-[30rem] ">
                     <img
                       src={img.src}
                       alt={img.title}
                       className="!w-full !h-full !object-cover"
                     />
                     {/* Overlay title */}
-                    <div className="absolute bottom-0 !border-t-1 border-black left-0 right-0 bg-white text-black font-semibold text-center py-3">
-                      <h3 className="text-lg font-semibold">{img.title}</h3>
+                    <div className="!absolute !bottom-0 !border-t-1 !border-black/30 !left-0 !right-0 bg-white !px-3 text-black font-semibold text-center !py-5">
+                      <h3 className="!font-bold uppercase !text-[1.2rem]">{img.name}</h3>
+                      <p className="font-medium text-gray-700 text-[.9rem]">{img.title}</p>
+                      <p className="font-medium text-gray-700 text-[.9rem]">{img.title2}</p>
                     </div>
                   </div>
                 ))}

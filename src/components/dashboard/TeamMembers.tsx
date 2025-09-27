@@ -28,7 +28,7 @@ const TeamMembers: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-200">
+    <div className="bg-gradient-to-r from-gray-200 to-gray-100">
       <div className="container mx-auto px-8 pb-8 relative">
       <div className="py-8 text-center">
         <h2 className="text-center py-2 !font-bold !text-4xl">

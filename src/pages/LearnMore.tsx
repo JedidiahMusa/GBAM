@@ -38,7 +38,7 @@ function LearnMore() {
   return (
     <>
       <Navbar />
-      <div className="pt-24 w-full bg-gradient-to-b from-gray-100 via-gray-200 to-gray-300 lg:px-24 px-4">
+      <div className="pt-24 w-full bg-gradient-to-r from-gray-100 to-gray-200 lg:px-24 px-4">
         <h2 className="w-full text-center !font-bold !text-5xl">ABOUT US</h2>{" "}
 
         <section className="pb-12">

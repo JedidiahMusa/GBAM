@@ -24,7 +24,7 @@ const StatCard: React.FC<StatCardProps> = ({ icon, count, label, suffix }) => {
       <div className="text-gbam-primary mb-4 text-4xl">{icon}</div>
       <CountUp end={count} duration={3} enableScrollSpy scrollSpyDelay={200}>
         {({ countUpRef }) => (
-          <h2 className="!text-4xl font-bold overflow-hidden">
+          <h2 className="!text-4xl !font-bold !overflow-hidden">
             <span ref={countUpRef} className="mr-[1px]" />
             <span className="text-gbam-primary font-bold">{suffix}</span>
           </h2>
