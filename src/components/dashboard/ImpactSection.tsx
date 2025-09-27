@@ -4,6 +4,7 @@ import { BsPeople } from "react-icons/bs";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { SiSemanticscholar } from "react-icons/si";
 import { HiOutlineUserGroup } from "react-icons/hi";
+import { IoIosMedal } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -59,7 +60,7 @@ const ImpactSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <StatCard
             icon={<BsPeople size={50} className="text-orange-500 !font-bold" />}
             count={50000}
@@ -73,7 +74,7 @@ const ImpactSection: React.FC = () => {
                 className="text-orange-500 !font-bold"
               />
             }
-            count={500}
+            count={1000}
             suffix="+"
             label="Youths Trained"
           />
@@ -97,6 +98,17 @@ const ImpactSection: React.FC = () => {
             }
             count={23}
             label="LGAs Collaborated With"
+          />
+          <StatCard
+            icon={
+              <IoIosMedal 
+                size={50}
+                className="text-orange-500 !font-bold"
+              />
+            }
+            count={350}
+            suffix="+"
+            label="SMEs Engaged"
           />
         </div>
       </div>
