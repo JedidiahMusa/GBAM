@@ -1,12 +1,21 @@
 import { useEffect } from "react";
 import Slider from "react-slick";
-import localGov from "../../assets/images/championship/JABI0283.webp";
+import localGov from "../../assets/images/championship/champ1.webp";
+import localGov1 from "../../assets/images/championship/champ2.webp";
+import localGov2 from "../../assets/images/championship/champ3.webp";
+import localGov3 from "../../assets/images/championship/champ4.webp";
 import secSchool from "../../assets/images/championship/secSch1.webp";
 import secSchool1 from "../../assets/images/championship/secSch1.webp";
 import secSchool2 from "../../assets/images/championship/secSch2.webp";
 import secSchool3 from "../../assets/images/championship/secSch3.webp";
 import secSchool4 from "../../assets/images/championship/secSch4.webp";
 import Adult from "../../assets/images/championship/competition3.webp";
+import Adult1 from "../../assets/images/championship/adult1.webp";
+import Adult2 from "../../assets/images/championship/adult2.webp";
+import Adult3 from "../../assets/images/championship/adult3.webp";
+import Adult4 from "../../assets/images/championship/adult4.webp";
+import Adult5 from "../../assets/images/championship/adult5.webp";
+import Adult6 from "../../assets/images/championship/adult6.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
@@ -60,10 +69,10 @@ const ChampionshipCard: React.FC<ChampionshipCardProps> = ({
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-gbam-dark font-display mb-3">
+        <h3 className="!text-xl !font-bold !text-gbam-dark !font-display !mb-3">
           {title}
         </h3>
-        <p className="text-gbam-dark/80 mb-5">{description}</p>
+        <p className="!text-gbam-dark/80 !mb-5">{description}</p>
         {buttonText && (
           <button className="bg-gbam-secondary hover:bg-gbam-secondary/90 text-white w-full py-2 rounded-md">
             {buttonText}
@@ -92,7 +101,7 @@ const ChampionshipsSection: React.FC = () => {
             <span className="text-gbam-primary">#</span>
             <span className="text-gbam-dark">GBAM</span> Championships
           </h2>
-          <p className="text-gbam-dark/80 !max-w-3xl 1mx-auto !font-medium !text-xl">
+          <p className="text-gbam-dark/80 !max-w-3xl !mx-auto !font-medium !text-xl">
             Competitive basketball events that inspire teamwork, leadership, and
             community pride.
           </p>
@@ -108,13 +117,13 @@ const ChampionshipsSection: React.FC = () => {
           <ChampionshipCard
             title="Adult Championship"
             description="A dynamic tournament for men and women at tertiary and professional levels fostering competition and connection."
-            images={[Adult, Adult]} // replace with multiple Adult images if you have them
+            images={[Adult, Adult4, Adult1, Adult5, Adult2, Adult6, Adult3]} // replace with multiple Adult images if you have them
           />
 
           <ChampionshipCard
             title="Inter-LGA Adult Championships"
             description="Local governments battle not with bitterness but with brilliance showcasing culture, talent, and the strength of collective spirit."
-            images={[localGov, localGov]} // replace with multiple localGov images if available
+            images={[localGov, localGov1, localGov2, localGov3]} // replace with multiple localGov images if available
           />
         </div>
       </div>

@@ -93,7 +93,7 @@ const ValuesSection = () => {
           />
           <ValueCard
             title="Excellence"
-            description="Delivering world-class programs and experiences."
+            description="Delivering world class programs and experiences."
             icon={
               <MdOutlineVerified
                 size={40}
@@ -103,7 +103,7 @@ const ValuesSection = () => {
           />
           <ValueCard
             title="Inclusivity"
-            description="Embracing diversity—empowering women, children, and persons with special needs."
+            description="Embracing diversity, empowering women, children, and persons with special needs."
             icon={
               <TbUsersGroup
                 size={40}

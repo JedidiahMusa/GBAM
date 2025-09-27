@@ -114,7 +114,7 @@ const Carousel = ({ images = carouselImages, className }: CarouselProps) => {
                   objectFit="cover"
                   transition="transform 0.3s ease-in-out"
                   _hover={{ transform: "scale(1.09)" }}
-                  loading={index > 1 ? "lazy" : "eager"}
+                  loading={index === 0 ? "eager" : "lazy"}
                   onLoad={() => {
                     setLoadedImages((prev) => ({ ...prev, [index]: true }));
                   }}
