@@ -13,6 +13,7 @@ import MembershipSection from "@/components/dashboard/MembershipSection";
 import FoundationSection from "@/components/dashboard/FoundationSection";
 import BounceBackSection from "@/components/dashboard/BounceBackSection";
 import CallToAction from "@/components/dashboard/CallToAction";
+import MarqueeContainer from "@/components/dashboard/MarqueeContainer";
 import { Element } from "react-scroll";
 
 function Home() {
@@ -59,6 +60,10 @@ function Home() {
           <ChampionshipsSection />
         </Box>
       </Element>
+
+      <Box as="section" id="partners">
+        <MarqueeContainer />
+      </Box>
 
       <Element name="membership">
         <Box as="section" id="membership">

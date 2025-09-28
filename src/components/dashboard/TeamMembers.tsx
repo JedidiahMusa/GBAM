@@ -8,7 +8,7 @@ import Janet from "../../assets/images/teamMembers/Janet-Gapsiso.webp";
 import Mayowa from "../../assets/images/teamMembers/Mayowa-Kilanko.webp";
 import Mercy from "../../assets/images/teamMembers/Mercy-Ofuya-welfare.webp";
 import Murpheus from "../../assets/images/teamMembers/Murpheus.webp";
-import Samuel from "../../assets/images/teamMembers/Samuel-Ajowgu-Abah.webp";
+import Samuel from "../../assets/images/teamMembers/samuel.webp";
 import Zailani from "../../assets/images/teamMembers/Zailani-AJ-Musa-CSO.webp";
 
 const TeamMembers: React.FC = () => {
@@ -21,7 +21,7 @@ const TeamMembers: React.FC = () => {
     { id: 1, src: Dagana, name:"Dagana Ndakotsu", title: "Head of Logistics", alt: "Dagana Ndakotsu" }, 
     { id: 6, src: Janet, name:"Janet Gapsiso", title: "Head of Legal", alt: "Janet Gapsiso" }, 
     { id: 4, src: Ehie, name:"Ehie Major-Attah", title: "Head of Finance/Accounts", alt: "Ehie Major-Attah" },
-    { id: 12, src: Samuel, name:"Samuel Ajowgu", title: "Head of Operations", alt: "Samuel Ajowgu" },  
+    { id: 12, src: Samuel, name:"Samuel Ajogwu", title: "Head of Operations", alt: "Samuel Ajowgu" },  
     { id: 11, src: Zailani, name:"Zailani AJ Musa", title: "Chief Security Officer", alt: "Zailani AJ Musa" },
     { id: 10, src: Mayowa, name:"Mayowa Kilanko", title: "Head of Media", alt: "Mayowa Kilanko" },
     { id: 8, src: Mercy, name:"Mercy Ofuya", title: "Head of welfare", alt: "Mercy Ofuya" },

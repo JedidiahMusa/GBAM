@@ -2,7 +2,6 @@
 @config "../tailwind.config.js";
 @tailwind utilities;
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -18,3 +17,4 @@ body {
     width: 100%;
   }
 }
+
