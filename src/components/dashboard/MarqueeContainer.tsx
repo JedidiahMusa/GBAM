@@ -82,7 +82,7 @@ const MarqueeContainer: React.FC = () => {
             <img
               src={src}
               alt={`logo ${idx + 1}`}
-              className="h-20 md:h-32 max-w-32 cursor-pointer md:max-w-40 w-auto object-contain grayscale hover:grayscale-0"
+              className="h-20 md:h-32 max-w-32 cursor-pointer md:max-w-40 w-auto object-contain lg:grayscale hover:grayscale-0"
             />
           </div>
         ))}
@@ -98,7 +98,7 @@ const MarqueeContainer: React.FC = () => {
             <img
               src={src}
               alt={`marquee-row2-${idx}`}
-              className="h-20 md:h-32 max-w-32 cursor-pointer md:max-w-40 w-auto object-contain grayscale hover:grayscale-0"
+              className="h-20 md:h-32 max-w-32 cursor-pointer md:max-w-40 w-auto object-contain lg:grayscale hover:grayscale-0"
             />
           </div>
         ))}
