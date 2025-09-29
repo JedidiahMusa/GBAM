@@ -67,7 +67,7 @@ const MarqueeContainer: React.FC = () => {
   return (
     <div className="bg-white py-4 pb-10 space-y-6">
       {/* First Marquee (left by default) */}
-      <div className="text-center mx-auto">
+      <div className="text-center mb-10 mx-auto">
         <h2 className="text-gbam-dark !font-bold !text-3xl md:!text-4xl lg:!text-5xl">
             <b className="text-gbam-primary">#</b>
             GBAM Partners Over the Years
@@ -77,7 +77,7 @@ const MarqueeContainer: React.FC = () => {
         {firstHalf.map((src, idx) => (
           <div
             key={`row1-${idx}`}
-            className="flex items-center justify-center mx-6 h-auto w-40"
+            className="flex items-center justify-center mx-6 h-auto w-24 md:w-36 "
           >
             <img
               src={src}
@@ -93,7 +93,7 @@ const MarqueeContainer: React.FC = () => {
         {secondHalf.map((src, idx) => (
           <div
             key={`row2-${idx}`}
-            className="flex items-center justify-center mx-6 h-auto  w-40"
+            className="flex items-center justify-center mx-6 h-auto w-24 md:w-36 "
           >
             <img
               src={src}
